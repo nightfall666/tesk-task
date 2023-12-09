@@ -33,11 +33,11 @@ function printPromotionDates($year)
                 $date = date(date("$day-е ") . $months[(date('n'))] . '.' . date(' Y'));
 
                 if (isEven($day)) {
-                    // Promotion for tables on even days
+
                     $tablePromotions++;
                     echo "$date - Акция на столы\n";
                 } else {
-                    // Promotion for chairs on odd days
+
                     $chairPromotions++;
                     echo "$date - Акция на стулья\n";
                 }
@@ -57,7 +57,7 @@ function printPromotionDates($year)
     }
 }
 
-// Пример использования:
+
 $year = 2023;
 printPromotionDates($year);
 
